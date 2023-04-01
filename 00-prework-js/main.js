@@ -1,3 +1,5 @@
+
+
 const products = [
     {
         name: 'banan',
@@ -17,5 +19,8 @@ const products = [
     }
 ]
 
-const sumPrice = products.reduce((sum, a) => sum + parseFloat(a.price), 0)
+const sumPrice = products.reduce((sum, curr) => sum + parseFloat(curr.price), 0)
 const avgPrice = sumPrice / products.length
+
+console.log(sumPrice)
+console.log(avgPrice)
