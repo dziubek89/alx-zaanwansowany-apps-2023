@@ -1,0 +1,102 @@
+/* Resetowanie styli dla elementów HTML */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stylowanie nagłówka strony */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+  }
+  
+  /* Stylowanie formularza */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 60%;
+  }
+  
+  /* Stylowanie etykiet i pól formularza */
+  label {
+    margin-top: 20px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid #333;
+  }
+  
+  /* Stylowanie przycisku submit */
+  #submit__button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: 50%;
+  }
+  
+  #submit__button:hover {
+    background-color: #555;
+  }
+  
+  /* Stylowanie listy wiadomości */
+  #messages__list {
+    list-style: none;
+    margin: 50px auto;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  #messages__list li {
+    margin-bottom: 20px;
+  }
+  
+  #messages__list li strong {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  #messages__list li p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Stylowanie przycisku usuwania formularza */
+  #delete__button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: 50%;
+  }
+  
+  #delete__button:hover {
+    background-color: #f55;
+  }
+  
