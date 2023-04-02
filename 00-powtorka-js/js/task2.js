@@ -40,6 +40,7 @@ const products = [
 
 
 const productsWithCat = products.filter((item) => item.category === 'fruits')
+
 const sumReduce = productsWithCat.reduce((sum, acc) => sum + acc.price, 0)
 console.log(sumReduce)
 
