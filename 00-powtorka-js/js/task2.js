@@ -38,11 +38,14 @@ const products = [
     }
 ]
 
+
+const productsWithCat = products.filter((item) => item.category === 'fruits')
+const sumReduce = productsWithCat.reduce((sum, acc) => sum + acc.price, 0)
+console.log(sumReduce)
+
 let sum = 0
-
-
 for (product of products) {
-    if (product.category === 'owoce') {
+    if (product.category === 'fruits') {
         sum = sum + product.price
     }
 }
