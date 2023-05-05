@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Wyszukiwarka połączeń PKP</h1>
+
+    <div class="search">
+      <form id="searchForm">
+        <label for="name">Nazwa pociągu:</label>
+        <input type="text" id="searchName" />
+
+        <button type="submit">Szukaj</button>
+      </form>
+    </div>
+
+    <div>
+      <label for="city-select">Wybierz miasto:</label>
+      <select id="city-select">
+        <option value="">Wszystkie miasta</option>
+        <option value="Warszawa">Warszawa</option>
+        <option value="Kraków">Kraków</option>
+        <option value="Wrocław">Wrocław</option>
+        <option value="Gdańsk">Gdańsk</option>
+        <option value="Poznań">Poznań</option>
+        <option value="Szczecin">Szczecin</option>
+        <option value="Łódź">Łódź</option>
+        <option value="Lublin">Lublin</option>
+        <option value="Gdynia">Gdynia</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="date">Data:</label>
+      <input type="date" id="departureDate" name="date" />
+    </div>
+
+    <div class="add">
+      <form id="add">
+        <label for="name">Nazwa pociągu:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="from">Z:</label>
+        <input type="text" id="from" name="from" />
+
+        <label for="to">Do:</label>
+        <input type="text" id="to" name="to" />
+
+        <label for="time">Czas:</label>
+        <input type="time" id="time" name="time" />
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" />
+
+        <button type="submit">Dodaj</button>
+      </form>
+    </div>
+
+    <div class="results">
+      <!-- Tutaj będą wyświetlane wyniki wyszukiwania -->
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Nazwa pociągu</th>
+            <th>Z</th>
+            <th>Do</th>
+            <th>Czas</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+
+        <tbody id="resultTableBody"></tbody>
+      </table>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
